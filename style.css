@@ -1,0 +1,245 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "header header header header header"
+    "sidebar main main main main"
+    "sidebar main main main main"
+    "sidebar main main main main"
+    "footer footer footer footer footer";
+  gap: 20px; /* first unit of measure */
+  padding: 20px;
+  background-color: brown;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page_02 {
+  background-color: brown;
+  position: relative;
+  align-items: center;
+}
+
+.page_02 img {
+  width: 500px;
+  margin: 15px;
+  border: 5px solid white;
+}
+
+.header {
+  grid-area: header;
+  background-color: blueviolet;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.sidebar {
+  grid-area: sidebar;
+  background-color: blueviolet;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.main {
+  grid-area: main;
+  background-color: blueviolet;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: blueviolet;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.sidebar img {
+  width: 100px;
+}
+
+h4 {
+  font-size: small;
+}
+
+.bothEyes {
+  display: inline-flex;
+  position: relative;
+  z-index: 4;
+}
+
+.frogEyes {
+  height: 3rem; /* second unit of measure */
+  width: 3rem;
+  justify-content: center;
+  background-color: #013220;
+  padding-left: 5px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.frogHead {
+  height: 100px;
+  width: 200px;
+  background-color: #123f2f;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 45%;
+  margin-top: -25px;
+  position: relative;
+  z-index: 3;
+}
+
+.frogFeet {
+  display: inline-flex;
+  position: relative;
+  z-index: 2;
+}
+.frogFoot {
+  width: 150px;
+  height: 35px;
+  background-color: #0c402d;
+  border-radius: 25%;
+  margin-top: -25px;
+}
+
+.lillyPad {
+  width: 450px;
+  height: 150px;
+  background-color: green;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -20mm; /* third unit of measure */
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 800px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      "header header header header header"
+      "sidebar main main main main"
+      "sidebar main main main main"
+      "sidebar main main main main"
+      "footer footer footer footer footer";
+    gap: 20px; /* first unit of measure */
+    padding: 20px;
+    background-color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .page_02 {
+    background-color: brown;
+  }
+
+  .page_02 img {
+    width: 400px;
+    margin: 15px;
+    border: 5px solid white;
+    position: relative;
+    align-items: center;
+  }
+
+  .page_02 button {
+    position: relative;
+    align-items: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      "header"
+      "main "
+      "sidebar"
+      "footer";
+    gap: 20px; /* first unit of measure */
+    padding: 20px;
+    background-color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .bothEyes {
+    display: inline-flex;
+    position: relative;
+    z-index: 4;
+  }
+
+  .frogEyes {
+    height: 2rem; /* second unit of measure */
+    width: 2rem;
+    justify-content: center;
+    background-color: #013220;
+    padding-left: 5px;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .frogHead {
+    height: 50px;
+    width: 100px;
+    background-color: #123f2f;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 45%;
+    margin-top: -25px;
+    position: relative;
+    z-index: 3;
+  }
+
+  .frogFeet {
+    display: inline-flex;
+    position: relative;
+    z-index: 2;
+  }
+  .frogFoot {
+    width: 75px;
+    height: 15px;
+    background-color: #0c402d;
+    border-radius: 25%;
+    margin-top: -35px;
+  }
+
+  .lillyPad {
+    width: 200px;
+    height: 75px;
+    background-color: green;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20mm; /* third unit of measure */
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+  }
+
+  .page_02 {
+    background-color: brown;
+  }
+
+  .page_02 img {
+    width: 200px;
+    margin: 15px;
+    border: 5px solid white;
+    position: relative;
+    align-items: center;
+  }
+
+  .page_02 button {
+    position: relative;
+    align-items: center;
+  }
+}
